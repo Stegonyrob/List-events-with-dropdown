@@ -1,0 +1,61 @@
+ 
+    /* Set the style for the navigation menus */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        background: #48abe0;
+        padding: 1rem;
+        transition: background 0.5s;
+        display: block;
+        outline: 0;
+      }
+      
+      nav a:hover,
+      nav li:focus-within > a {
+        background: #245975;
+        cursor: pointer;
+      }
+      
+      .dropdown-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s;
+      
+        
+      }
+      
+     .dropdown:hover .dropdown-content,
+      .dropdown:focus .dropdown-content,
+      .dropdown:focus-within .dropdown-content {
+        max-height: 50rem;
+      }
+      
+      
+      @media screen and (min-width: 768px) {
+        nav > ul > li {
+          float: left;
+        }
+        
+        .dropdown {
+          position: relative;
+        }
+        
+        .dropdown-content {
+          position: absolute;  
+          width: 1200%;
+          text-justify: auto;
+         text-align: justify;
+         padding: 5rem;
+        }
+        
+        .content {
+          clear: both;
+        }
+      }
